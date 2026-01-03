@@ -3,14 +3,151 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>ToteKit – Legal</title>
+    <title>ToteKit – About</title>
+    <meta name="description" content="ToteKit – About, privacy policy, terms of service, and support." />
+    <style>
+      :root{
+        --bg:#0b1220;
+        --card:#0f1a2e;
+        --text:#eaf0ff;
+        --muted:#b8c4e6;
+        --link:#7aa7ff;
+        --border:rgba(255,255,255,.08);
+        --shadow: 0 10px 30px rgba(0,0,0,.35);
+      }
+      *{box-sizing:border-box}
+      body{
+        margin:0;
+        font-family:-apple-system, system-ui, Segoe UI, Roboto, Arial, sans-serif;
+        background: radial-gradient(1200px 800px at 20% 0%, rgba(122,167,255,.18), transparent 60%),
+                    radial-gradient(900px 700px at 100% 10%, rgba(120,255,214,.10), transparent 55%),
+                    var(--bg);
+        color:var(--text);
+      }
+      .wrap{max-width:980px;margin:0 auto;padding:28px 18px 60px}
+      .top{
+        display:flex;align-items:flex-start;justify-content:space-between;gap:16px;
+        padding:18px 18px 14px;border:1px solid var(--border);border-radius:18px;
+        background:rgba(15,26,46,.72);backdrop-filter: blur(10px);
+        box-shadow:var(--shadow);
+      }
+      h1{margin:0;font-size:28px;letter-spacing:.2px}
+      .sub{margin:6px 0 0;color:var(--muted);line-height:1.5}
+      .nav{
+        display:flex;gap:10px;flex-wrap:wrap;justify-content:flex-end;
+      }
+      .pill{
+        display:inline-block;padding:10px 12px;border-radius:999px;
+        border:1px solid var(--border);
+        background:rgba(255,255,255,.03);
+        color:var(--text);text-decoration:none;font-size:14px;
+      }
+      .pill:hover{border-color:rgba(122,167,255,.45)}
+      .grid{display:grid;grid-template-columns:1.3fr .7fr;gap:16px;margin-top:16px}
+      @media (max-width:860px){.grid{grid-template-columns:1fr}}
+      .card{
+        border:1px solid var(--border);border-radius:18px;
+        background:rgba(15,26,46,.68);backdrop-filter: blur(10px);
+        box-shadow:var(--shadow);
+        padding:18px;
+      }
+      h2{margin:0 0 10px;font-size:18px}
+      p{margin:0 0 12px;color:var(--muted);line-height:1.6}
+      ul{margin:0;padding-left:18px;color:var(--muted);line-height:1.7}
+      a{color:var(--link)}
+      .footer{margin-top:18px;color:rgba(184,196,230,.85);font-size:13px}
+      .badge{
+        display:inline-block;margin-top:10px;
+        padding:6px 10px;border-radius:999px;
+        border:1px solid var(--border);
+        background:rgba(122,167,255,.10);
+        color:var(--text);font-size:13px;
+      }
+      .small{font-size:13px;color:rgba(184,196,230,.85)}
+      .kpi{display:flex;gap:10px;flex-wrap:wrap;margin-top:10px}
+      .kpi span{
+        padding:8px 10px;border-radius:12px;border:1px solid var(--border);
+        background:rgba(255,255,255,.03);font-size:13px;color:var(--muted)
+      }
+      code{background:rgba(255,255,255,.06);padding:2px 6px;border-radius:8px}
+    </style>
   </head>
-  <body style="font-family: -apple-system, system-ui, Segoe UI, Roboto, Arial; padding: 24px; max-width: 900px; margin: 0 auto;">
-    <h1>ToteKit – Legal</h1>
-    <p>Quick links:</p>
-    <ul>
-      <li><a href="./privacy.html">Privacy Policy</a></li>
-      <li><a href="./terms.html">Terms of Service</a></li>
-    </ul>
+
+  <body>
+    <div class="wrap">
+      <div class="top">
+        <div>
+          <h1>ToteKit</h1>
+          <div class="sub">
+            Official legal & support pages for the ToteKit mobile app.
+            <div class="badge">Last updated: 2026-01-03</div>
+          </div>
+        </div>
+
+        <nav class="nav" aria-label="Legal navigation">
+          <a class="pill" href="./">About</a>
+          <a class="pill" href="./privacy.html">Privacy Policy</a>
+          <a class="pill" href="./terms.html">Terms of Service</a>
+          <a class="pill" href="./support.html">Support</a>
+        </nav>
+      </div>
+
+      <div class="grid">
+        <section class="card">
+          <h2>About the app</h2>
+          <p>
+            ToteKit is a simple utility app designed to help you stay organized and keep track of what matters.
+            The app is built with a focus on clarity, speed, and privacy.
+          </p>
+
+          <h2>Key principles</h2>
+          <ul>
+            <li><strong>Privacy-first:</strong> we avoid collecting unnecessary personal data.</li>
+            <li><strong>Transparency:</strong> we explain what we collect (and what we don’t).</li>
+            <li><strong>User control:</strong> you can request deletion and manage permissions anytime.</li>
+          </ul>
+
+          <h2>Quick links</h2>
+          <p>
+            Use the navigation above or:
+            <a href="./privacy.html">Privacy Policy</a>, <a href="./terms.html">Terms of Service</a>, <a href="./support.html">Support</a>.
+          </p>
+
+          <p class="small">
+            Replace this text with an exact description of your features if you want it more specific
+            (e.g., lists, reminders, account login, cloud sync, analytics, push notifications).
+          </p>
+        </section>
+
+        <aside class="card">
+          <h2>Contact</h2>
+          <p>
+            Support email: <a href="mailto:info@hudsonsolution.sk">info@hudsonsolution.sk</a><br />
+            (Replace with your real support email)
+          </p>
+
+          <div class="kpi">
+            <span>Platform: iOS</span>
+            <span>Language: EN</span>
+            <span>Support: Email</span>
+          </div>
+
+          <h2 style="margin-top:14px;">App Store needs</h2>
+          <ul>
+            <li>Privacy Policy URL ✅</li>
+            <li>Support URL ✅</li>
+            <li>Terms URL (recommended) ✅</li>
+          </ul>
+
+          <div class="footer">
+            © <span id="y"></span> ToteKit. All rights reserved.
+          </div>
+        </aside>
+      </div>
+    </div>
+
+    <script>
+      document.getElementById('y').textContent = new Date().getFullYear();
+    </script>
   </body>
 </html>

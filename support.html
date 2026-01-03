@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ToteKit – Support</title>
+    <meta name="description" content="Support page for the ToteKit mobile app." />
+    <style>
+      :root{--bg:#0b1220;--card:#0f1a2e;--text:#eaf0ff;--muted:#b8c4e6;--link:#7aa7ff;--border:rgba(255,255,255,.08);--shadow:0 10px 30px rgba(0,0,0,.35)}
+      *{box-sizing:border-box} body{margin:0;font-family:-apple-system,system-ui,Segoe UI,Roboto,Arial,sans-serif;background:var(--bg);color:var(--text)}
+      .wrap{max-width:980px;margin:0 auto;padding:28px 18px 60px}
+      .top{display:flex;align-items:flex-start;justify-content:space-between;gap:16px;padding:18px;border:1px solid var(--border);border-radius:18px;background:rgba(15,26,46,.72);backdrop-filter:blur(10px);box-shadow:var(--shadow)}
+      h1{margin:0;font-size:24px} .sub{margin:6px 0 0;color:var(--muted);line-height:1.5}
+      .nav{display:flex;gap:10px;flex-wrap:wrap;justify-content:flex-end}
+      .pill{display:inline-block;padding:10px 12px;border-radius:999px;border:1px solid var(--border);background:rgba(255,255,255,.03);color:var(--text);text-decoration:none;font-size:14px}
+      .pill:hover{border-color:rgba(122,167,255,.45)}
+      .card{margin-top:16px;border:1px solid var(--border);border-radius:18px;background:rgba(15,26,46,.68);backdrop-filter:blur(10px);box-shadow:var(--shadow);padding:18px}
+      h2{margin:18px 0 10px;font-size:18px} h2:first-of-type{margin-top:0}
+      p{margin:0 0 12px;color:var(--muted);line-height:1.7}
+      ul{margin:0 0 12px;padding-left:18px;color:var(--muted);line-height:1.7}
+      a{color:var(--link)}
+      .box{padding:12px 14px;border-radius:14px;border:1px solid var(--border);background:rgba(255,255,255,.03);margin:10px 0 14px}
+      .small{font-size:13px;color:rgba(184,196,230,.85)}
+    </style>
+  </head>
+
+  <body>
+    <div class="wrap">
+      <div class="top">
+        <div>
+          <h1>Support</h1>
+          <div class="sub">
+            Need help with ToteKit? We’re here.<br />
+            Last updated: 2026-01-03
+          </div>
+        </div>
+        <nav class="nav">
+          <a class="pill" href="./">About</a>
+          <a class="pill" href="./privacy.html">Privacy</a>
+          <a class="pill" href="./terms.html">Terms</a>
+          <a class="pill" href="./support.html">Support</a>
+        </nav>
+      </div>
+
+      <div class="card">
+        <h2>Contact support</h2>
+        <div class="box">
+          Email: <a href="mailto:info@hudsonsolution.sk">info@hudsonsolution.sk</a><br />
+          <span class="small">Recommended: include your device model, iOS version, and the app version.</span>
+        </div>
+
+        <h2>FAQ</h2>
+        <ul>
+          <li><strong>I don’t receive notifications.</strong> Check iOS Settings → Notifications → ToteKit, and ensure notifications are enabled.</li>
+          <li><strong>The app icon/logo looks wrong.</strong> Make sure you installed the build (TestFlight or device build), not just Expo Go.</li>
+          <li><strong>The app crashes.</strong> Please email us a brief description of what you did right before it happened.</li>
+          <li><strong>How do I delete my data?</strong> Email us with your request. If your data is stored only locally, deleting the app removes it from your device.</li>
+        </ul>
+
+        <h2>Response times</h2>
+        <p>
+          We typically respond within 2–3 business days. During early beta testing, response times may vary.
+        </p>
+
+        <h2>Useful links</h2>
+        <p>
+          <a href="./privacy.html">Privacy Policy</a> ·
+          <a href="./terms.html">Terms of Service</a> ·
+          <a href="./">About</a>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
