@@ -26,15 +26,19 @@
       }
       .wrap{max-width:980px;margin:0 auto;padding:28px 18px 60px}
       .top{
-        display:flex;align-items:flex-start;justify-content:space-between;gap:16px;
+        display:flex;align-items:center;justify-content:space-between;gap:16px;
         padding:18px 18px 14px;border:1px solid var(--border);border-radius:18px;
         background:rgba(15,26,46,.72);backdrop-filter: blur(10px);
         box-shadow:var(--shadow);
       }
+      .top-left{
+        flex: 1 1 auto;     
+        min-width: 260px;
+        }
       h1{margin:0;font-size:28px;letter-spacing:.2px}
       .sub{margin:6px 0 0;color:var(--muted);line-height:1.5}
       .nav{
-        display:flex;gap:10px;flex-wrap:wrap;justify-content:flex-end;
+        display:flex;gap:10px;flex-wrap:nowrap;justify-content:flex-end;white-space:nowrap;
       }
       .pill{
         display:inline-block;padding:10px 12px;border-radius:999px;
@@ -70,13 +74,26 @@
         background:rgba(255,255,255,.03);font-size:13px;color:var(--muted)
       }
       code{background:rgba(255,255,255,.06);padding:2px 6px;border-radius:8px}
+
+      @media (max-width: 720px){
+        .top{
+            flex-wrap:wrap;                /* nech sa bloky zložia pod seba */
+            align-items:flex-start;
+        }
+        .nav{
+            width:100%;
+            justify-content:flex-start;
+            flex-wrap:wrap;                /* tu už môže lámať */
+            white-space:normal;
+        }
+        }
     </style>
   </head>
 
   <body>
     <div class="wrap">
       <div class="top">
-        <div>
+        <div class="top-left">
           <h1>ToteKit</h1>
           <div class="sub">
             Official legal & support pages for the ToteKit mobile app.
